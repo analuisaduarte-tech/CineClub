@@ -1,0 +1,114 @@
+
+<html>
+<head>
+  <title>CineClub - Página Inicial</title>
+  <style>
+    body {
+      margin: 0!important;
+      font-family: Times New Roman!important;
+      background-color: #1c1c1c!important; /* fundo cinza escuro */
+      color:  #f4e04d!important; /* amarelo suave */
+    }
+
+    /* Menu fixo no topo */
+    .navbar {
+      background-color: #222!important; /* cinza escuro */
+      overflow: hidden!important;
+      position: fixed!important;
+      top: 0!important;
+      width: 100%!important;
+      border-bottom: 2px solid #c0392b!important; /* vermelho mais suave */
+      padding: 10px 0!important;
+    }
+
+    .navbar a {
+      float: left!important;
+      display: block!important;
+      color:  #f4e04d!important;
+      text-align: center!important;
+      padding: 14px 20px!important;
+      text-decoration: none!important;
+      font-family: Times New Roman!important;
+    }
+
+    .navbar a:hover {
+     Background-color: 2px solid #c0392b!important; /* vermelho mais suave */
+      color: #fff!important;
+    }
+
+    /* Conteúdo principal */
+    .content {
+      margin-top: 100px!important;
+      text-align: center!important;
+    }
+
+    h1 {
+     Color:  #f4e04d!important;    }
+
+    h2 {
+      color:  #c0392b!important;    }
+
+    .intro {
+      margin-top: 30px!important;
+      font-size: 18px!important;
+      color: #ddd!important;
+      width: 60%!important;
+      margin-left: auto!important;
+      margin-right: auto!important;
+    }
+
+    .logo {
+      width: 160px!important;
+      margin-bottom: 20px!important;
+    }
+  </style>
+</head>
+<body>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+  <!-- Menu fixo -->
+  <div class="navbar" > 
+    <a href="index.html">Início</a>
+    <a href="login.html">Login</a>
+    <a href="cadastro_usuario.html">Cadastro de Usuário</a>
+    <a href="cadastro_filme.html">Cadastro de Filme</a>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="content">
+    <img src="./imagens/Logo CineClub.png" alt="Logo CineClub" class="logo">
+    <h1>CineClub</h1>
+    <h2>O seu clube de cinema online</h2>
+
+    <p class="intro">
+      Explore o mundo do cinema com o CineClub! Faça login ou crie sua conta para cadastrar filmes, avaliar produções e descobrir novas recomendações.
+    </p>
+     <a class="btn btn-warning" style="background-color: #c0392b; color: #f4e04d"     href='login.html'>Entrar</a>
+     <a class="btn btn-warning" style="background-color: #c0392b; color: #f4e04d"     href='cadastro_usuario.html'>Cadastre-se</a>
+  <!-- <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Entrar</a> -->
+    <div class="modal fade" id="modal-id">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <a href="login.html">Login</a>
+            <input type="text">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
