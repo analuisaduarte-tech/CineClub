@@ -24,11 +24,13 @@
       text-align: center;
       width: 500px; /* aumentado em relação ao login */
       box-shadow: 0 0 20px rgba(192, 57, 43, 0.7);
+
     }
     .logo {
       width: 120px;
       margin-bottom: 15px;
     }
+
     h1 {
       color: #f4e04d;
       margin-bottom: 5px;
@@ -55,6 +57,33 @@
       color: #f4e04d;
       resize: none;
     }
+   
+    /* aplica o mesmo estilo do input para o select */
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #c0392b;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  color: #f4e04d;
+  font-family: 'Times New Roman', serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  resize: none; /* para textarea */
+  cursor: pointer;
+}
+
+/* remove estilo padrão do select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
     input[type="submit"] {
       width: 100%;
       padding: 12px;
@@ -66,6 +95,7 @@
       cursor: pointer;
       transition: 0.3s;
       font-size: 16px;
+      font-family: 'Times New Roman', serif; 
     }
     input[type="submit"]:hover {
       background-color: #c0392b;
@@ -94,8 +124,19 @@
       <input type="text" id="director" name="director">
 
       <label for="genre">Gênero:</label>
-      <input type="text" id="genre" name="genre">
-
+      <select id="genre" name="genre" required>
+  <option value="" disabled selected>Escolha um gênero</option>
+  <option value="acao">Ação</option>
+  <option value="aventura">Aventura</option>
+  <option value="comedia">Comédia</option>
+  <option value="drama">Drama</option>
+  <option value="ficcao">Ficção Científica</option>
+  <option value="fantasia">Fantasia</option>
+  <option value="terror">Terror</option>
+  <option value="romance">Romance</option>
+  <option value="documentario">Documentário</option>
+</select>
+    
       <label for="releaseYear">Ano de Lançamento:</label>
       <input type="text" id="releaseYear" name="releaseYear">
 
